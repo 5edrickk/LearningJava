@@ -33,17 +33,30 @@ It focuses on understanding core Java syntax and basic program structure.
 ---
 
 ## ▶️ How to Run
+
+### Prerequisites
+- Java JDK 25
+- Terminal / Command Prompt
+
+### Steps
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/repository-name.git
-`````
-2. Compile the program:
+```
+
+2. Navigate to the project directory:
+```bash
+cd repository-name
+```
+
+3. Compile the program:
 ```bash
 javac Main.java
-`````
-3. Run the program:
+```
+
+4. Run the program:
 ```bash
 java Main
-`````
-
+```
 ---
