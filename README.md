@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://socialify.git.ci/5edrickk/LearningJava/image?custom_description=My+first+java+program&description=1&font=JetBrains+Mono&language=1&name=1&owner=1&pattern=Solid&theme=Dark" />
+</p>
+
 # Learning Java – Temperature Conversion Exercise
 
 ## 📌 Description
@@ -42,21 +46,29 @@ It focuses on understanding core Java syntax and basic program structure.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/5edrickk/LearningJava.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd repository-name
+cd LearningJava
 ```
 
-3. Compile the program:
+3. Navigate to the src folder:
 ```bash
-javac Main.java
+cd src
 ```
 
-4. Run the program:
+4. Compile the program:
 ```bash
-java Main
+javac ConversionDegree.java
 ```
+
+5. Run the program:
+```bash
+java ConversionDegrees
+```
+---
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ---

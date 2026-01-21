@@ -3,6 +3,7 @@ out/
 *.iml
 .idea/
 .kotlin
+/src/MessageBienvenue.java
 
 ### Eclipse ###
 .apt_generated
