@@ -27,8 +27,11 @@ public class ConversionDegrees {
         do {
             invalidResponse = false;
 
-            System.out.println("Enter a value of type Double and the degree type (Celsius or Fahrenheit)"); //Asks user input
-            degrees = userInput.nextDouble(); // Reads user input
+            System.out.println("Enter a value of type Double:");
+            degrees = userInput.nextDouble();
+            userInput.nextLine();
+
+            System.out.println("Enter the degree type (Celsius or Fahrenheit):");
             degreeType = userInput.nextLine();
 
             if(degrees < 0 || !(degreeType.equals("Celsius") || degreeType.equals("Fahrenheit"))){
@@ -36,17 +39,16 @@ public class ConversionDegrees {
                 System.out.println("Invalid response, please insert correct values");
             }
 
-        }
-        while(invalidResponse);
+        }while(invalidResponse);
 
         ConversionDegrees conversion = new ConversionDegrees(degreeType, degrees);
-        System.out.println("Degrees : " + conversion.degrees + " Type:" + conversion.type);
+        System.out.println("Degrees : " + conversion.degrees + " Type : " + conversion.type);
 
         if (conversion.type.equals("Celsius")){
-            System.out.println("The value " + conversion.degrees + " in Fahrenheit is: " + conversion.convertToFahrenheit(conversion.degrees));
+            System.out.println("The value " + conversion.degrees + "°C in Fahrenheit is: " + conversion.convertToFahrenheit(conversion.degrees));
         }
         else{
-            System.out.println("The value " + conversion.degrees + " in Celsius is: " + conversion.convertToCelsius(conversion.degrees));
+            System.out.println("The value " + conversion.degrees + "°F in Celsius is: " + conversion.convertToCelsius(conversion.degrees));
         }
 
     }
